@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="styles.css">+
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Basic Layout */
+body {
+    font-family:cursive;   
+    line-height: 1.6;
+    background-color: #b41919;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #25cc00;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home Section */
+#home {
+    background: #0077ff;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Courses Section */
+#courses {
+    background: #e9e9e9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#courses h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+#courses ul li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+form button {
+    background: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover {
+    background: #0033aa;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>My School</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="banner">
+            <h2>Welcome to My School</h2>
+            <p>Education is the foundation of success. Join us to build your future!</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a leading school dedicated to providing quality education and fostering a passion for learning in our students.</p>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <ul>
+            <li>Mathematics</li>
+            <li>Science</li>
+            <li>English</li>
+            <li>History</li>
+            <li>Art</li>
+            <li>Physical Education</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 My School. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
